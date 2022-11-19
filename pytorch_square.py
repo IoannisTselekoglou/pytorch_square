@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 
 #Creating the basick modell
 
-
 class NeuralNetwork(nn.Module):
     def __init__(self):
         super().__init__()
@@ -53,7 +52,6 @@ for epochs in range(n_iters):
 
     if epochs % 100 == 0:
         print(f" {epochs+1}, l={l.item()}")
-
 
 X_test = torch.rand(10,1)
 print(model.parameters)
